@@ -1,0 +1,73 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.Fragment.NearFragment"
+    android:orientation="vertical"
+    android:background="@color/colorCheap_bg">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="29"
+        android:background="@android:color/white"
+        android:layout_marginBottom="1dip">
+        <ImageView
+            android:id="@+id/farvor_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/farvor_title" />
+        <ImageView
+            android:id="@+id/farvor_icon_title_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/list_icon_title"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dip"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="50"
+        android:orientation="vertical"
+        android:background="@android:color/white">
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/initial_anim"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="推荐"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"
+                android:layout_marginLeft="4dip"
+                android:layout_marginTop="2dip"
+                />
+        </FrameLayout>
+    </LinearLayout>
+    <com.scxh.slider.library.SliderLayout
+        android:id="@+id/farvor_slider_image"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="300"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:background="@color/colorCheap_bg"
+        android:paddingTop="1dip"
+        android:paddingBottom="1dip"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="60">
+
+    </LinearLayout>
+
+</LinearLayout>
